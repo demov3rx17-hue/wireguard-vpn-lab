@@ -1,0 +1,8 @@
+# Never commit WireGuard private keys or live configs.
+*.key
+*.private
+server_private.key
+client*_private.key
+configs/*.conf
+!configs/*.conf.example
+secrets/

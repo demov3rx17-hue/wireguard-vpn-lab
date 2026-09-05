@@ -1,0 +1,11 @@
+[Interface]
+Address = 10.50.0.2/24
+PrivateKey = <CLIENT01_PRIVATE_KEY_NOT_FOR_GIT>
+DNS = 1.1.1.1
+
+[Peer]
+PublicKey = Mp7miFl5FYNtVXJzuIK0OzKoREtgIsSgOkji1Lrn8A0=
+Endpoint = 192.168.239.132:51820
+# Split tunnel: only VPN and corporate network go through WireGuard.
+AllowedIPs = 10.50.0.0/24, 192.168.20.0/24
+PersistentKeepalive = 25
